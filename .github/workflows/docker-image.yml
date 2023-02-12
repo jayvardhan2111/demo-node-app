@@ -18,7 +18,7 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker build .  --tag davidjay2111/demo-node-repo:$(date +%s)
+          docker build --tag davidjay2111/demo-node-repo:$(date +%s) .
           docker push davidjay2111/demo-node-repo:$(date +%s)
        
         
