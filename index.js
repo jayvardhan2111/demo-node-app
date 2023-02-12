@@ -4,7 +4,7 @@ const port = 3000;
 
 app.get("/", (req, res) =>
   res.send(
-   "Welcome to simple node Web application"
+   "Welcome to simple nodejs based  Web application"
   )
 );
 
