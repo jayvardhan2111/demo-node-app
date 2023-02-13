@@ -56,4 +56,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-node-repo:${GITHUB_RUN_NUMBER}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-node-repo:build-${{ github.run_number }}
