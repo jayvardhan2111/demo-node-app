@@ -4,7 +4,7 @@ const port = 3000;
 
 app.get("/", (req, res) =>
   res.send(
-   "Welcome to simple nodejs  Web application, cd is based on Argo, In future we will implement automatic triger "
+   "Welcome to simple nodejs  Web application, cd is based on Argo "
   )
 );
 
