@@ -74,7 +74,7 @@ jobs:
           git config --global user.name "jayvardhan2111"
           # echo ${{ github.run_number }}
           echo "$PWD"
-          sed -i "s#${{ secrets.DOCKERHUB_USERNAME }}.*#${{ secrets.DOCKERHUB_USERNAME }}/demo-node-app:${{ github.run_number }}#g" "$PWD"/config-files/deploy.yml
+          sed -i "s#${{ secrets.DOCKERHUB_USERNAME }}.*#${{ secrets.DOCKERHUB_USERNAME }}/demo-node-app:build-${{ github.run_number }}#g" "$PWD"/config-files/deploy.yml
           git add -A
           git commit -am "Update image for - ${{ github.run_number }}"
       # - run: echo ${{ github }}
