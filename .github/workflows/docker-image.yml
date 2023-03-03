@@ -73,6 +73,7 @@ jobs:
           git config --global user.email "jayvardhanprajapat@gmail.com"
           git config --global user.name "jayvardhan2111"
           echo ${{ github.run_number }}
+          pwd
           sed -i "s#${{ secrets.DOCKERHUB_USERNAME }}.*#${{ secrets.DOCKERHUB_USERNAME }}/demo-node-app:${{ github.run_number }}#g" ./config-files/deploy.yaml
           git add -A
           git commit -am "Update image for - ${{ github.run_number }}"
