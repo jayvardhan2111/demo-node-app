@@ -8,6 +8,21 @@ app.get("/", (req, res) =>
   )
 );
 
+app.get("/apis", (req, res) =>
+  res.send(
+   "Hitting the /apis route "
+  )
+);
+
+app.get("/books", (req, res) =>
+  res.send(
+   "Hitting the /books route "
+  )
+);
+
+
+
+
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
